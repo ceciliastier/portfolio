@@ -1,0 +1,26 @@
+.project{
+    background-color: white;
+    border: 1px solid $dark-gray;
+    img{
+        max-width: 100%;
+    }
+    &-desc{
+        padding: 10px 20px 20px;
+        text-align: left;
+        a{
+            padding: 0;
+            color: $dark-gray;
+            transition: 0.1s;
+            &:hover{
+                color: $primary;
+            }
+        }
+        h3{
+            margin: 3% 0 5%;
+        }
+        p{
+            margin-top: 3%;
+            margin: 10px 0;
+        }
+    }
+}

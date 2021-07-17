@@ -1,0 +1,26 @@
+header{
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo{
+        z-index: 10;
+        @include mq($tablet){
+            flex-grow: 1;
+        }
+    }
+    .navigation{
+        @include mq($tablet){
+            flex-grow: 1;
+        }
+    }
+    @include mq($tablet){
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    @include mq($tablet){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

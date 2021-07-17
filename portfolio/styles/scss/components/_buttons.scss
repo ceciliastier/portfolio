@@ -1,0 +1,16 @@
+.button{
+    font-family: 'Overpass', sans-serif;
+    color: white;
+    border: 1px solid $dark-gray;
+    background-color: $primary;
+    padding: 10px 20px;
+    transition: 0.1s;
+    max-width: 150px;
+    min-height: 50px;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 5px;
+    &:hover{
+        box-shadow: 2px 2px 0 $dark-gray;
+    }
+}

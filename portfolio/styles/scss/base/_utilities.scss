@@ -1,0 +1,32 @@
+@mixin mq($width){
+    @media screen and (min-width: $width){
+        @content;
+    }
+}
+.wrapper{
+    padding-left: 7%;
+    padding-right: 7%;
+    @include mq($tablet){
+        padding-left: 9%;
+        padding-right: 9%;
+    }
+    @include mq($desktop){
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+main .wrapper{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    @include mq($tablet){
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+    @include mq($desktop){
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+.hide{
+    overflow: hidden;
+}

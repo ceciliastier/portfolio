@@ -1,0 +1,31 @@
+.burger{
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    span{
+        background-color: $dark-gray;
+        margin-bottom: 6px;
+        width: 30px;
+        height: 1px;
+        border: 1px solid $dark-gray;
+        border-radius: 25px;
+        transition: .2s;
+        position: relative;
+    }
+    @include mq($tablet){
+        display: none;
+    }
+}
+// burger icon state changes
+.burger.open span:nth-child(2){
+    width: 0;
+    border: none;
+}
+.burger.open span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+.burger.open span:nth-child(3){
+    transform: rotate(45deg);
+    top: -8px;
+}

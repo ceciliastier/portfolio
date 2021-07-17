@@ -1,0 +1,19 @@
+.projects-container{
+    .project{
+        margin: 8% 0;
+        @include mq($tablet){
+            margin: 0;
+        }
+    }
+    @include mq($tablet){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        // padding: 5% 0 11%;
+        padding-top: 5%;
+    }
+    @include mq($desktop){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

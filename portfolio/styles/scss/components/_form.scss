@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    input, textarea{
+        padding: 10px;
+    }
+    label{
+        padding: 15px 0 5px;
+        @include mq($desktop){
+            &:first-of-type{
+                padding-top: 0;
+            }
+        }
+    }
+    .button{
+        margin-top: 25px;
+    }
+}

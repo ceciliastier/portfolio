@@ -1,0 +1,48 @@
+body{
+    font-family: 'Overpass', sans-serif;
+    color: $dark-gray;
+}
+h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    @include mq($tablet){
+        font-size: 48px;
+    }
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    @include mq($tablet){
+        font-size: 24px;
+    }
+}
+p{
+    line-height: 31px;
+}
+.hero p{
+    @include mq($tablet){
+        font-size: 20px;
+    }
+}
+label{
+    font-weight: 600;
+}
+nav li{
+    font-size: 24px;
+    @include mq($tablet){
+        font-size: 16px;
+    }
+}
+.ft-logo{
+    @include mq($tablet){
+        font-size: 24px;
+    }
+}

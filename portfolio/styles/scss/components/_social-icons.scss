@@ -1,0 +1,10 @@
+.social{
+    img{
+        width: 32px;
+        transition: 0.2s;
+        margin: 5px;
+        &:hover{
+            filter: drop-shadow(1px 1px 0 $dark-gray);
+        }
+    }
+}

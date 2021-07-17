@@ -1,0 +1,52 @@
+.navigation{
+    background-color: $light-gray;
+    height: 0;
+    position: absolute;
+    top: -300px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+    nav{
+        ul{
+            @include mq($tablet){
+                display: flex;
+            }
+        }
+        li{
+            padding: 10px;
+        }
+        a{
+            color: $dark-gray;
+            transition: 0.2s;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    .social{
+        padding: 10px 0;
+        @include mq($tablet){
+            margin-left: 8%;
+        }
+    }
+    @include mq($tablet){
+        height: auto;
+        width: auto;
+        position: static;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.navigation.show{
+    top: 0;
+    height: 101vh;
+
+}
